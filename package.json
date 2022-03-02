@@ -1,0 +1,32 @@
+{
+  "name": "proyecto_final",
+  "version": "1.0.0",
+  "description": "PRoyecto final coderhouse backend ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroT117/proyecto-final.git"
+  },
+  "keywords": [
+    "ecommerce"
+  ],
+  "author": "Uriel Alejandro Trejo Martínez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandroT117/proyecto-final/issues"
+  },
+  "homepage": "https://github.com/AlejandroT117/proyecto-final#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
