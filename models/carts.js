@@ -192,6 +192,7 @@ class ContenedorCart {
 
       const unselectedCart = data.find((obj) => obj.id !== id);
 
+      /* Líneas confusas, corregir */
       const filedata = unselectedCart? [selectedCart, unselectedCart]: [selectedCart]
 
       await fs.writeFile(

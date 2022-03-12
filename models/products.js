@@ -19,6 +19,7 @@ class Contenedor{
           last_id = producto.id          
         }
       }
+      /* Cambiar por data[data.length - 1].id */
 
       this.next_id = last_id + 1
 
@@ -66,11 +67,14 @@ class Contenedor{
       const raw = await fs.readFile(this.filename, 'utf-8')
       const data = JSON.parse(raw)
 
+
       const obj = data.find((obj)=>obj.id===id)
 
       if(!obj){
         return null
       }
+
+      /* Eliminar map y hacerlo con el mismo find */
 
       data.map(product=>{
         if(product.id === id){
